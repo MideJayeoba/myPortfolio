@@ -201,7 +201,7 @@ h2 {
 h3 {
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   font-size: 1.42rem;
-  color: #555;
+  color: hsl(205, 40%, 91%);
   margin-bottom: 20px;
 }
 
@@ -507,7 +507,7 @@ footer p {
   box-shadow: 0 10px 20px rgba(102, 126, 234, 0.7);
 }
 .hover-glow:hover {
-  text-shadow: 0 0 8px #667eea;
+  /* text-shadow: 0 0 8px #667eea; */
 }
 .fade-in {
   animation: fadeIn 1.5s ease forwards;
@@ -549,7 +549,6 @@ footer p {
 input:focus, textarea:focus {
   outline: none;
   border-color: var(--accent-color);
-  box-shadow: 0 0 5px var(--accent-color);
+  /* box-shadow: 0 0 5px var(--accent-color); */
   transition: box-shadow 0.3s ease;
 }
-
