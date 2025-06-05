@@ -1,7 +1,13 @@
 import React from 'react';
+import { useState } from 'react';
 import menative from '../assets/menative.jpg';
+import PopUp from '../components/popUp';
 
 const Home = () => {
+  const [isPopUpVisible, setIsPopUpVisible] = useState(false);
+  const togglePopUp = () => {
+    setIsPopUpVisible(!isPopUpVisible);
+  };
   return (
     <>
       <header className="fade-in text-gradient text-center mb-3">
@@ -22,6 +28,18 @@ const Home = () => {
           <h2 className="text-gradient mb-2 hover-glow">Hello World✨😊</h2>
           <h3 className="hover-glow">Welcome to Mide Jayeoba's page</h3>
         </div>
+        <button
+          style={{
+            padding: '0rem 1rem',
+            marginTop: '1rem',
+            alignSelf: 'center',
+          }}
+          className="bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white py-2"
+          onClick={togglePopUp}
+        >
+          leave a message
+        </button>
+        <PopUp isVisible={isPopUpVisible} onClose={togglePopUp} />
       </section>
     </>
   );
