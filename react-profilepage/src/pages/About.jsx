@@ -1,5 +1,5 @@
 import React from 'react';
-import mefun from '../assets/meent.jpg';
+import mefun from '../assets/ment.png';
 
 const About = () => {
   return (

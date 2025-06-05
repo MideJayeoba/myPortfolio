@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import menative from '../assets/menative.jpg';
+import menative from '../assets/menative.png';
 import PopUp from '../components/popUp';
 
 const Home = () => {
