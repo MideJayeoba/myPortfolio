@@ -1,27 +1,5 @@
 import React, { useEffect } from 'react';
-
-const overlayStyle = {
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  backgroundColor: 'rgba(0,0,0,0.7)',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  zIndex: 9999,
-};
-
-const modalStyle = {
-  backgroundColor: 'white',
-  borderRadius: '0.5rem',
-  padding: '1.5rem',
-  boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
-  maxWidth: '28rem',
-  width: '100%',
-  position: 'relative',
-};
+import '../pop.css';
 
 export default function PopUp({ isVisible, onClose }) {
   useEffect(() => {
@@ -40,8 +18,8 @@ export default function PopUp({ isVisible, onClose }) {
   if (!isVisible) return null;
 
   return (
-    <div style={overlayStyle} role="dialog" aria-modal="true">
-      <div style={modalStyle}>
+    <div className='overlayStyle' role="dialog" aria-modal="true">
+      <div className='modalStyle'>
         <button
           onClick={onClose}
           style={{
