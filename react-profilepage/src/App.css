@@ -545,7 +545,6 @@ footer p {
 .container {
   width: 1200px;       /* Desktop max width */
   margin: 0 auto 2rem auto;
-  padding: 0 1rem;
   box-sizing: border-box;
 
   
@@ -565,7 +564,6 @@ footer p {
 @media (max-width: 768px) {
   .container {
     width: 640px;
-    padding: 0 0.75rem;
   }
 }
 
@@ -573,7 +571,6 @@ footer p {
 @media (max-width: 480px) {
   .container {
     width: 600px;
-    padding: 0 0.5rem;
   }
 }
 
