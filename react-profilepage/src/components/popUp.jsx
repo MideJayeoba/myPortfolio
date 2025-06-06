@@ -45,9 +45,6 @@ export default function PopUp({ isVisible, onClose }) {
         <button
           onClick={onClose}
           style={{
-            position: 'absolute',
-            top: '0rem',
-            right: '0.5rem',
             color: '#4B5563',
             fontSize: '2rem',
             fontWeight: 'bold',
