@@ -3,7 +3,7 @@ import mefun from '../assets/ment.png';
 
 const About = () => {
   return (
-    <>
+    <div className="container">
       <header className="fade-in text-center mb-3">
         <h1 className="text-gradient hover-glow">Jayeoba Peace Olamide</h1>
         <p className="hover-glow">Software Engineer | Full-Stack Developer | Tech-Infused Musician</p>
@@ -85,7 +85,7 @@ const About = () => {
           <p>When I’m not refactoring logic or designing a backend architecture, I’m composing music, playing acoustic guitar, or organizing jam sessions. I believe music and code are both languages — and I happen to speak both fluently.</p>
         </section>
       </div>
-    </>
+    </div>
   );
 };
 

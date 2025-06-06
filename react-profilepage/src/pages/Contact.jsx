@@ -9,7 +9,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <header className="fade-in text-center mb-3">
         <h1 className="hover-glow">Contact Me</h1>
         <p className="hover-glow">I'd love to hear from you!</p>
@@ -30,7 +30,7 @@ const Contact = () => {
         </button>
         <PopUp isVisible={isPopUpVisible} onClose={togglePopUp} />
       </div>
-    </>
+    </div>
   );
 };
 
