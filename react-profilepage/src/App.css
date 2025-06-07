@@ -571,7 +571,7 @@ footer p {
 /* Phones */
 @media (max-width: 480px) {
   .container {
-    max-width: 400px;
+    max-width: 90%;
     padding: 0 0.5rem;
   }
 }
