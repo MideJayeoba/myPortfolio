@@ -549,7 +549,7 @@ footer p {
   box-sizing: border-box;
 
   display: flex;
-  direction: column;
+  flex-direction: column;
   justify-content: center;
 }
 
