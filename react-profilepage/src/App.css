@@ -543,12 +543,8 @@ footer p {
 
 /* Added container and section-title styles */
 .container {
-  width: 1200px;       /* Desktop max width */
-  margin: 0 auto 0 auto;
+  max-width: 1200px;       /* Desktop max width */
   padding: 1rem 1rem;
-  box-sizing: border-box;
-
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -557,15 +553,15 @@ footer p {
 /* Tablet (medium screens) */
 @media (max-width: 1024px) {
   .container {
-    width: 900px;
-     padding: 0 0.7rem;
+    max-width: 900px;
+    padding: 0 0.7rem;
   }
 }
 
 /* Small tablets / large phones */
 @media (max-width: 768px) {
   .container {
-    width: 640px;
+    max-width: 640px;
     padding: 0 0.7rem;
   }
 }
@@ -573,7 +569,7 @@ footer p {
 /* Phones */
 @media (max-width: 480px) {
   .container {
-    width: 450px;
+    max-width: 450px;
     padding: 0 0.5rem;
   }
 }
