@@ -544,9 +544,12 @@ footer p {
 /* Added container and section-title styles */
 .container {
   max-width: 1200px;       /* Desktop max width */
-  padding: 1rem 1rem;
+  margin: 0 auto 2rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+
   display: flex;
-  flex-direction: column;
+  direction: column;
   justify-content: center;
 }
 
@@ -554,7 +557,6 @@ footer p {
 @media (max-width: 1024px) {
   .container {
     max-width: 900px;
-    padding: 0 0.7rem;
   }
 }
 
@@ -562,14 +564,14 @@ footer p {
 @media (max-width: 768px) {
   .container {
     max-width: 640px;
-    padding: 0 0.7rem;
+    padding: 0 0.75rem;
   }
 }
 
 /* Phones */
 @media (max-width: 480px) {
   .container {
-    max-width: 450px;
+    max-width: 100%;
     padding: 0 0.5rem;
   }
 }
