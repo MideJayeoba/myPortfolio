@@ -544,8 +544,8 @@ footer p {
 /* Added container and section-title styles */
 .container {
   width: 1200px;       /* Desktop max width */
-  margin: 0 0;
-  padding: 0 1rem;
+  margin: 0 auto 0 auto;
+  padding: 1rem 1rem;
   box-sizing: border-box;
 
   
@@ -558,6 +558,7 @@ footer p {
 @media (max-width: 1024px) {
   .container {
     width: 900px;
+     padding: 0 0.7rem;
   }
 }
 
@@ -565,7 +566,7 @@ footer p {
 @media (max-width: 768px) {
   .container {
     width: 640px;
-    padding: 0 0rem;
+    padding: 0 0.7rem;
   }
 }
 
@@ -573,7 +574,7 @@ footer p {
 @media (max-width: 480px) {
   .container {
     width: 450px;
-    padding: 0 0;
+    padding: 0 0.5rem;
   }
 }
 
